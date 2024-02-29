@@ -3,17 +3,55 @@
   <head>
     <meta charset = "utf-8">
     <title>Cmap</title>
+    <style>
+      #mainContainer {
+        max-width: 70%;
+        margin: 0 auto 0 auto;
+      }
+      h1 {
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: bold;
+        color: #002699;
+        text-align: center;
+      }
+      #banner {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 0% 65%;
+      }
+      h2 {
+        font-family: Roboto;
+        font-size: 32px;
+        color: #002699;
+        text-align: center;
+      }
+      .MainText {
+        font-family: Roboto;
+        color: #00font: size;    font-size: 16px;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <div id = "mainContainer">
+     <header>
       <h1>HYUNDAI CAREERS</h1>
-      <img src = "https://8f4f07f0-1a05-47ca-8523-ac909f804749-00-1hx7i1h10t0gl.pike.repl.co/static/career.jpg" alt = "Hyundai careers main page" width = "1450" height = "400">
+      <img src = "https://8f4f07f0-1a05-47ca-8523-ac909f804749-00-1hx7i1h10t0gl.pike.repl.co/static/career.jpg" alt = "Hyundai careers main page" id = "banner">
     </header>
     <main>
-      
+        <h2>About HYUNDAI</h2>
+        <p class = "MainText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed           do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut         enim ad minim veniam, quis nostrud exercitation ullamco laboris           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in         reprehenderit in voluptate velit esse cillum dolore eu fugiat             nulla pariatur. Excepteur sint occaecat cupidatat non proident,           sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h2>Open positions</h2>
+        <p class = "MainText">TODO - show the jobs here</p>
     </main>
     <footer>
-      
-    </footer>
+      <div style = "text-align: center;">
+        <button>Contact us</button>
+      </div>
+      <p>Copyright 2024, Alexeyev Igor</p>
+     </footer>
+    </div>
   </body>
 </html>
