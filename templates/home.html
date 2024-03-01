@@ -2,55 +2,36 @@
 <html>
   <head>
     <meta charset = "utf-8">
+    <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <title>Cmap</title>
     <style>
-      #mainContainer {
-        max-width: 70%;
-        margin: 0 auto 0 auto;
-      }
-      h1 {
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: bold;
-        color: #002699;
-        text-align: center;
-      }
       #banner {
+        height: 30vh;
         width: 100%;
-        height: 300px;
         object-fit: cover;
-        object-position: 0% 65%;
-      }
-      h2 {
-        font-family: Roboto;
-        font-size: 32px;
-        color: #002699;
-        text-align: center;
-      }
-      .MainText {
-        font-family: Roboto;
-        color: #00font: size;    font-size: 16px;
+        object-position: 0% 67%;
       }
     </style>
   </head>
   <body>
-    <div id = "mainContainer">
+    <div class = "container">
      <header>
-      <h1>HYUNDAI CAREERS</h1>
-      <img src = "https://8f4f07f0-1a05-47ca-8523-ac909f804749-00-1hx7i1h10t0gl.pike.repl.co/static/career.jpg" alt = "Hyundai careers main page" id = "banner">
+      <h1 class = "text-center mt-2 mb-4">HYUNDAI CAREERS</h1>
+      <img src = "https://8f4f07f0-1a05-47ca-8523-ac909f804749-00-1hx7i1h10t0gl.pike.repl.co/static/career.jpg" alt = "Hyundai careers main page" id = "banner" class = "img-fluid">
     </header>
     <main>
-        <h2>About HYUNDAI</h2>
-        <p class = "MainText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed           do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut         enim ad minim veniam, quis nostrud exercitation ullamco laboris           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in         reprehenderit in voluptate velit esse cillum dolore eu fugiat             nulla pariatur. Excepteur sint occaecat cupidatat non proident,           sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h2 class = "text-center mt-2 mb-4">About HYUNDAI</h2>
+        <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed           do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut         enim ad minim veniam, quis nostrud exercitation ullamco laboris           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in         reprehenderit in voluptate velit esse cillum dolore eu fugiat             nulla pariatur. Excepteur sint occaecat cupidatat non proident,           sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <h2>Open positions</h2>
-        <p class = "MainText">TODO - show the jobs here</p>
+        <h2 class = "text-center mt-2 mb-4">Open positions</h2>
+        <p>TODO - show the jobs here</p>
     </main>
     <footer>
-      <div style = "text-align: center;">
-        <button>Contact us</button>
+      <div class = "text-center">
+        <button class = "btn btn-primary btn-lg">Contact us</button>
+        <p style = "margin-top: 1vw">Copyright 2024, Alexeyev Igor</p>
       </div>
-      <p>Copyright 2024, Alexeyev Igor</p>
      </footer>
     </div>
   </body>
