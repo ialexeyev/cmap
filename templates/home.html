@@ -17,7 +17,7 @@
   <body>
     <div class = "container">
      <header>
-      <h1 class = "text-center mt-2 mb-4">HYUNDAI CAREERS</h1>
+      <h1 class = "text-center mt-2 mb-4">{{companyName}} CAREERS</h1>
       <img src = "https://8f4f07f0-1a05-47ca-8523-ac909f804749-00-1hx7i1h10t0gl.pike.repl.co/static/career.jpg" alt = "Hyundai careers main page" id = "banner" class = "img-fluid">
     </header>
     <main>
@@ -25,12 +25,20 @@
         <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed           do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut         enim ad minim veniam, quis nostrud exercitation ullamco laboris           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in         reprehenderit in voluptate velit esse cillum dolore eu fugiat             nulla pariatur. Excepteur sint occaecat cupidatat non proident,           sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <h2 class = "text-center mt-2 mb-4">Open positions</h2>
-        <p>TODO - show the jobs here</p>
+        <p>
+          {% for job in jobs %}
+            <div style = "margin-bottom: 2vw;">
+              <h4 style = "color:rgb(120,120,120); margin-top: 2vw">{{job['title']}}</h4>
+              <p><b>Location:</b> {{job['location']}}</p>
+              <p><b>Salary:</b> {{job['salary']}}</p>
+            </div>
+          {% endfor %}
+        </p>
     </main>
     <footer>
       <div class = "text-center">
         <button class = "btn btn-primary btn-lg">Contact us</button>
-        <p style = "margin-top: 1vw">Copyright 2024, Alexeyev Igor</p>
+        <p style = "margin-top: 1.5vw">Copyright 2024, Alexeyev Igor</p>
       </div>
      </footer>
     </div>
