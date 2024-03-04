@@ -18,8 +18,7 @@ JOBS = [
     {
         'id': 3,
         'title': 'Frontend Engineer',
-        'location': 'New Yourk, USA',
-        'salary': 'Rs. 20,00,000'
+        'location': 'New Yourk, USA'
     },
     {
         'id': 2,
@@ -38,4 +37,4 @@ def hello_world():
 if (__name__ == '__main__'):
   app.run(host='0.0.0.0', debug=True)
 
-  #finished on 1.18.27
+  #finished on 1.23.27

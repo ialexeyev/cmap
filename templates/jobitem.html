@@ -1,0 +1,19 @@
+<!-- displaying job items -->
+
+<div class = "border-bottom row" style = "margin-bottom: 2vw; padding-bottom: 0.5vw;">
+  <div class = "col-11">
+    <h4 style = "color:rgb(120,120,120); margin = 0;">     
+     {{job['title']}}
+    </h4>
+    <div>
+      <b>Location:</b> {{job['location']}}    </div>
+    {% if 'salary' in job %}
+      <div>
+        <b>Salary:</b> {{job['salary']}}
+      </div>
+    {% endif %}
+  </div>
+  <div class = "col-1" style = "margin: 0vw auto;">
+    <button type="button" class="btn btn-outline-primary">Apply</button>
+  </div>
+</div>
